@@ -7,7 +7,7 @@ struct Account
     double balance;
 };
 
-void update_balance(Account& user_acc, const float new_balance)
+void update_balance(Account& user_acc, const double new_balance)
 {
     user_acc.balance = new_balance;
     return;
@@ -27,7 +27,6 @@ int main()
     double new_balance;
     std::cout << "Введите новый баланс: ";
     std::cin >> new_balance;
-    std::cout << new_balance << std::endl;
     update_balance(user_acc, new_balance);
     std::cout << "Ваш счёт : " << user_acc.user_name << " " << user_acc.acc_num << " " << user_acc.balance << std::endl;
 
